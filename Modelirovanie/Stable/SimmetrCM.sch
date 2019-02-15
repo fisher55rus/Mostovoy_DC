@@ -1,4 +1,4 @@
-*version 9.2 2174019891
+*version 9.2 1374574804
 u 648
 U? 2
 V? 4
@@ -13,7 +13,11 @@ K? 2
 @analysis
 .TRAN 1 0 1 0
 +0 0ns
-+1 120m
++1 200m
+.OPT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ABSTOL 1uA
+ITL4 70
+RELTOL 0.01
 .OP 0 
 .PROBE 0 8488000 -1 0 1 3
 @targets
@@ -29,11 +33,11 @@ connectViaLocalLabels 0
 NoStim4ExtIFPortsWarnings 1
 AutoGenStim4ExtIFPorts 1
 @index
-pageloc 1 0 18479 
+pageloc 1 0 18733 
 @status
-c 119:01:11:14:48:49;1549885729
-n 0 119:01:11:14:48:51;1549885731 e 
-s 2832 119:01:11:14:48:51;1549885731 e 
+c 119:01:14:15:35:20;1550147720
+n 0 119:01:14:15:35:23;1550147723 e 
+s 2832 119:01:14:15:35:23;1550147723 e 
 *page 1 0 1520 970 iB
 @ports
 port 46 GND_ANALOG 170 160 h
@@ -78,13 +82,6 @@ part 57 Dbreak 380 170 V
 a 0 sp 13 0 5 51 hln 100 MODEL=Dbreak
 a 0 x 0:13 0 0 0 hln 100 PKGREF=D3
 a 0 xp 9 0 19 40 hln 100 REFDES=D3
-part 43 l 290 200 h
-a 0 u 13 0 21 23 hln 100 VALUE=160
-a 0 a 9 0 25 0 hln 100 REFDES=L1
-a 0 s 0 0 0 10 hlb 100 PART=l
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=L2012C
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=L1
 part 42 S 180 150 h
 a 0 u 0 0 0 20 hlb 100 RON=1m
 a 0 x 0:13 0 0 0 hln 100 PKGREF=S1
@@ -177,13 +174,6 @@ a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 a 0:13 0 0 0 hln 100 PKGREF=C5
 a 0 ap 9 0 15 2 hln 100 REFDES=C5
 a 0 u 13 0 1 5 hln 100 VALUE=500p
-part 329 R 1040 130 u
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R5
-a 0 ap 9 0 25 26 hln 100 REFDES=R5
-a 0 u 13 0 25 1 hln 100 VALUE=1k
 part 326 R 920 130 u
 a 0 sp 0 0 0 10 hlb 100 PART=R
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
@@ -205,13 +195,6 @@ a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 a 0:13 0 0 0 hln 100 PKGREF=C7
 a 0 ap 9 0 19 26 hln 100 REFDES=C7
 a 0 u 13 0 19 -1 hln 100 VALUE=1n
-part 37 SG1825 810 170 H
-a 0 u 0 0 0 10 hln 100 PERIOD={1/10k}
-a 0 sp 11 0 54 182 hlb 100 PART=SG1825
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP16
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 1 ap 9 0 58 8 hln 100 REFDES=U1
-a 0 a 0:13 0 0 0 hln 100 PKGREF=U1
 part 350 c 1080 200 u
 a 0 sp 0 0 0 10 hlb 100 PART=c
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=CK05
@@ -230,13 +213,6 @@ part 374 Dbreak 540 540 V
 a 0 x 0:13 0 0 0 hln 100 PKGREF=D6
 a 0 xp 9 0 19 40 hln 100 REFDES=D6
 a 0 sp 13 0 5 51 hln 100 MODEL=Dbreak
-part 369 R 1130 320 v
-a 0 u 13 0 15 1 hln 100 VALUE=5k
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R7
-a 0 ap 9 0 25 2 hln 100 REFDES=R7
 part 408 c 700 500 v
 a 0 sp 0 0 0 10 hlb 100 PART=c
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=CK05
@@ -263,13 +239,6 @@ part 605 Dbreak 540 400 v
 a 0 sp 13 0 5 51 hln 100 MODEL=Dbreak
 a 0 x 0:13 0 0 0 hln 100 PKGREF=D8
 a 0 xp 9 0 19 40 hln 100 REFDES=D8
-part 372 l 370 430 D
-a 0 u 13 0 35 1 hln 100 VALUE=160
-a 0 s 0 0 0 10 hlb 100 PART=l
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=L2012C
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=L2
-a 0 ap 9 0 23 -2 hln 100 REFDES=L2
 part 637 R 440 430 u
 a 0 u 13 0 25 1 hln 100 VALUE=1m
 a 0 sp 0 0 0 10 hlb 100 PART=R
@@ -283,20 +252,6 @@ a 0 u 13 0 4 53 hln 100 L2=L2
 a 0 sp 11 0 1 20 hln 100 PART=K_Linear
 a 0 a 0:13 0 0 0 hln 100 PKGREF=K1
 a 1 ap 9 0 22 8 hcn 100 REFDES=K1
-part 428 R 850 440 d
-a 0 u 13 0 29 33 hln 100 VALUE=100k
-a 0 ap 9 0 17 32 hln 100 REFDES=R10
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R10
-part 444 R 850 520 d
-a 0 u 13 0 29 33 hln 100 VALUE=60k
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R11
-a 0 ap 9 0 17 32 hln 100 REFDES=R11
 part 643 l 670 370 H
 a 0 u 13 0 21 21 hln 100 VALUE=20m
 a 0 s 0 0 0 10 hlb 100 PART=l
@@ -304,20 +259,69 @@ a 0 s 0:13 0 0 0 hln 100 PKGTYPE=L2012C
 a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 a 0:13 0 0 0 hln 100 PKGREF=L5
 a 0 ap 9 0 23 0 hln 100 REFDES=L5
-part 417 R 750 470 d
-a 0 u 13 0 31 29 hln 100 VALUE=0.2
+part 37 SG1825 810 170 H
+a 0 sp 11 0 54 182 hlb 100 PART=SG1825
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP16
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 1 ap 9 0 58 8 hln 100 REFDES=U1
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U1
+a 0 u 0 0 0 10 hln 100 PERIOD={1/20k}
+part 369 R 1130 320 v
+a 0 u 13 0 15 1 hln 100 VALUE=5k
 a 0 sp 0 0 0 10 hlb 100 PART=R
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
 a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R8
-a 0 ap 9 0 17 30 hln 100 REFDES=R8
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R7
+a 0 ap 9 0 25 2 hln 100 REFDES=R7
+part 329 R 1040 130 u
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R5
+a 0 ap 9 0 25 26 hln 100 REFDES=R5
+a 0 u 13 0 25 1 hln 100 VALUE=1k
+part 428 R 850 440 d
+a 0 ap 9 0 17 32 hln 100 REFDES=R10
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R10
+a 0 u 13 0 29 33 hln 100 VALUE=80k
+part 444 R 850 520 d
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R11
+a 0 ap 9 0 17 32 hln 100 REFDES=R11
+a 0 u 13 0 29 33 hln 100 VALUE=20k
+part 43 l 290 200 h
+a 0 a 9 0 25 0 hln 100 REFDES=L1
+a 0 s 0 0 0 10 hlb 100 PART=l
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=L2012C
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=L1
+a 0 u 13 0 21 23 hln 100 VALUE=40
+part 372 l 370 430 D
+a 0 s 0 0 0 10 hlb 100 PART=l
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=L2012C
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=L2
+a 0 ap 9 0 23 -2 hln 100 REFDES=L2
+a 0 u 13 0 35 1 hln 100 VALUE=0.12
 part 100 R 320 350 v
 a 0 sp 0 0 0 10 hlb 100 PART=R
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
 a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 a 0:13 0 0 0 hln 100 PKGREF=R1
 a 0 ap 9 0 25 2 hln 100 REFDES=R1
-a 0 u 13 0 15 1 hln 100 VALUE=15m
+a 0 u 13 0 15 1 hln 100 VALUE=2m
+part 417 R 750 470 d
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R8
+a 0 ap 9 0 17 30 hln 100 REFDES=R8
+a 0 u 13 0 31 29 hln 100 VALUE=0.1
 part 1 titleblk 1520 970 h
 a 1 s 13 0 350 10 hcn 100 PAGESIZE=B
 a 1 s 13 0 180 60 hcn 100 PAGETITLE=
@@ -329,8 +333,16 @@ a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 s 0 0 0 0 hln 100 PROBEVAR=
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 a 0 0 4 22 hlb 100 LABEL=1
 part 647 iMarker 750 470 h
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 a 0 0 6 20 hlb 100 LABEL=2
 @conn
@@ -758,9 +770,6 @@ j 950 300
 j 870 260
 + w 302
 + w 302
-j 880 130
-+ p 326 2
-+ w 302
 j 870 130
 + w 302
 + w 302
@@ -773,15 +782,6 @@ j 950 350
 j 990 330
 + p 333 1
 + w 282
-j 1040 130
-+ p 329 1
-+ s 332
-j 1000 130
-+ p 329 2
-+ w 335
-j 920 130
-+ p 326 1
-+ w 335
 j 990 130
 + w 335
 + w 335
@@ -791,15 +791,9 @@ j 990 230
 j 1050 200
 + p 350 2
 + w 353
-j 1020 240
-+ p 349 2
-+ w 353
 j 1010 240
 + w 353
 + w 353
-j 1060 240
-+ p 349 1
-+ w 364
 j 1080 240
 + p 351 2
 + w 364
@@ -848,9 +842,6 @@ j 700 500
 j 700 570
 + s 457
 + w 397
-j 750 510
-+ p 417 2
-+ w 397
 j 750 570
 + w 397
 + w 397
@@ -863,32 +854,17 @@ j 540 570
 j 480 540
 + p 373 1
 + w 397
-j 850 560
-+ p 444 2
-+ w 397
 j 850 510
 + w 439
 + w 439
 j 800 500
 + p 427 2
 + w 439
-j 850 480
-+ p 428 2
-+ w 439
-j 850 520
-+ p 444 1
-+ w 439
 j 800 370
 + w 419
 + w 419
 j 700 470
 + p 408 2
-+ w 419
-j 750 470
-+ p 417 1
-+ w 419
-j 850 440
-+ p 428 1
 + w 419
 j 800 420
 + p 426 2
@@ -988,10 +964,46 @@ j 610 370
 + w 646
 j 750 470
 + p 647 pin1
++ w 419
+j 850 480
++ p 428 2
++ w 439
+j 850 440
++ p 428 1
++ w 419
+j 750 510
++ p 417 2
++ w 397
+j 750 470
 + p 417 1
++ w 419
 j 750 470
 + p 647 pin1
-+ w 419
++ p 417 1
+j 850 560
++ p 444 2
++ w 397
+j 850 520
++ p 444 1
++ w 439
+j 1040 130
++ p 329 1
++ s 332
+j 1000 130
++ p 329 2
++ w 335
+j 880 130
++ p 326 2
++ w 302
+j 920 130
++ p 326 1
++ w 335
+j 1020 240
++ p 349 2
++ w 353
+j 1060 240
++ p 349 1
++ w 364
 @attributes
 a 0 s 0:13 0 0 0 hln 100 PAGETITLE=
 a 0 s 0:13 0 0 0 hln 100 PAGENO=1
